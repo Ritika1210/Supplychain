@@ -40,55 +40,56 @@ Open your Terminal or Command Prompt and run:
 git clone https://github.com/Ritika1210/Supplychain.git
 cd Supplychain
 ```
-📦 3. Step 2: Install Required Libraries
+### 📦 3. Step 2: Install Required Libraries
 Install the required dependencies using pip:
 
 bash
 
 
 pip install streamlit pandas plotly numpy
-▶️ 4. Step 3: Launch the Streamlit App
+
+### ▶️ 4. Step 3: Launch the Streamlit App
 Run the following command in your terminal:
 
 bash
 
 
 streamlit run app.py
-🌐 5. Access the Dashboard
+### 🌐 5. Access the Dashboard
 Once launched, the dashboard will automatically open in your default web browser at: 👉 http://localhost:8501
 
 (If it does not open automatically, copy and paste http://localhost:8501 into your Chrome/Edge browser).
 
-🗂️ Dashboard Navigation & Features
+### 🗂️ Dashboard Navigation & Features
 Use the Left Sidebar to switch between dashboard pages:
 
-📦 1. Inventory Analytics (Milestone 1):
+### 📦 1. Inventory Analytics (Milestone 1):
 
 Live stock tracking against Safety Stock and Reorder Points (ROP).
 Inventory Asset Value and Carrying Holding Cost estimation.
 Low-Stock Replenishment Action Grid with suggested reorder quantities.
-🚚 2. Delivery & Operations (Milestone 2):
+### 🚚 2. Delivery & Operations (Milestone 2):
 
 On-Time Delivery (OTD%) compliance against the 95% SLA target.
 Monthly Lead Time trends vs. the 8-Day SLA benchmark.
 Logistics Cost Savings Advisor: Recommends shifting non-urgent Air shipments to Road carriers.
-📊 3. Executive Logistics Control (Milestone 3):
+### 📊 3. Executive Logistics Control (Milestone 3):
 
 Supplier Composite Scorecards (Ranked / 100): Weighted by OTD, Quality, Speed, and Unit Cost.
 Geographic Distribution Hubs Map: Interactive OpenStreetMap showing regional shipment volume.
-Fragile Electronics Optimization: Carrier damage audits and mode routing recommendations.
+### Fragile Electronics Optimization: Carrier damage audits and mode routing recommendations.
 📈 4. Milestone 4 - Executive Summary:
 
 CEO Financial Summary: Gadgets Sold, Gross Revenue, and Net Profit.
 Product sales volume and profit margin leaderboards.
 Transportation mode speed vs. cost efficiency comparison.
 Automated CEO Strategic Risk & Action Plan.
-👑 5. Final Dashboard (Power BI Style Control Tower):
+### 👑 5. Final Dashboard (Power BI Style Control Tower):
 
 A single-page, high-density executive command center bringing all 4 milestones into one unified view.
 8-KPI Top Ribbon: Instant pulse of Revenue, Profit, Gadgets Sold, Orders, Lead Time, OTD%, Quality, and Inventory Health.
 Interactive 4-Level Slicers: Drill down from Region ➔ Supplier ➔ Product ➔ Order ID with color-coded delivery status badges (🟢 On Time, 🟡 Moderate Delay, 🔴 Critical Delay).
-📁 Repository Structure
+### 📁 Repository Structure
 text
 
 
@@ -99,7 +100,7 @@ text
 ├── supplier_orders.csv        # Purchase orders, delivery dates, and defect records
 ├── transportation.csv         # Shipping carriers, transit modes, costs, and distances
 └── README.md                  # Comprehensive Project Documentation
-🛠️ Architecture & Tech Stack
+### 🛠️ Architecture & Tech Stack
 [Raw CSV Datasets] ➔ [Pandas ETL Pipeline] ➔ [Star Schema Modeling] ➔ [KPI & DAX Engine] ➔ [Streamlit Control Tower]
 Frontend Framework: Streamlit
 Data Processing & Analytics: Python, Pandas, NumPy
@@ -107,14 +108,15 @@ Interactive Visualizations: Plotly Express & Plotly Graph Objects (Gauges, Donut
 Geospatial Intelligence: Plotly Scatter Mapbox & OpenStreetMap
 ❓ Troubleshooting
 Port Already in Use: If port 8501 is busy, run:
-bash
+```bash
 
 
 streamlit run app.py --server.port 8502
+```
 Regenerate Clean Datasets: If you need to re-generate synthetic datasets:
 bash
 
 
 python generate_data_std.py
-📜 License & Acknowledgements
+### 📜 License & Acknowledgements
 Developed as part of the Infosys Springboard Virtual Internship.
